@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/icon-error.svg">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script src="script.js"></script>
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+    <div class="container">
+     <div class="leftside">
+      <h1> Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. </p>
+     </div>
+     <div class="rightside">
+       <div class="trial">
+           <p>Try it free 7 days<span> then $20/mo. thereafter</span> </p>
+       </div>  
+       <form class="trialform">
+           <input type="text" name="FirstName " placeholder="First Name "  id="first" autocomplete="off">
+           <p class="err-msg" id="firsterr">First Name cannot be empty</p>
+
+           <input type="text"name="LastName" placeholder="Last Name" autocomplete="off" id="second" >
+           <p class="err-msg" id="seconderr">Last Name cannot be empty</p>
+
+           <input type="email" name="Email"placeholder="Email Address" autocomplete="off" id="email" >
+           <p class="err-msg" id="emailerr">Looks like this is not an email</p>
+
+           <input type="password" name="Password" placeholder="Password" id="pass" >
+           <p class="err-msg" id="passerr">password cannot be empty</p>
+
+           <input type="submit" value="CLAIM YOUR FREE TRIAL" id="submit">
+           <p class="terms">By clicking the button, you are agreeing to our <a href="#"> Terms and Services</a></p>
+       </form>             
+     
+     </div>
+
+
+    </div>
+</body>
+</html>

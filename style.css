@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background-image: url(images/bg-intro-desktop.png);
+  background-size: cover;
+  background-color: hsl(0, 100%, 74%);
+  color: white;
+}
+.container{
+    display: flex;
+    max-width: 1015px;
+    margin: 0 auto;
+    min-height: 92vh;
+    align-items: center;
+}
+.leftside{
+    max-width: 470px;
+   /* margin-right: 30px;*/
+  
+}
+.leftside h1{
+    font-weight: 700;
+    font-size:2.5rem;
+    line-height: 120%;
+}
+.leftside p{
+    font: size 0.9rem;
+}
+.rightside{
+   max-width: 470px;
+}
+.trial{
+    margin-top: 50px;
+    background: hsl(248, 32%, 49%);
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 2px 2px;
+    font-weight: 500;
+    font-size: .9rem;
+    box-shadow: 0 8px hsla(249, 10%, 26%, 0.15);
+    max-width: 515px;
+}
+.trial span{
+    font-weight: 400; 
+    color: rgba(255, 255, 255, 0.781); 
+}
+.trialform{
+    min-height: 450px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 8px hsla(249, 10%, 26%, 0.192);
+    border-radius: 10px;
+}
+.trialform > * {
+    margin-bottom: 20px;
+}
+.trialform input{
+  color: hsl(249, 10%, 26%);
+  border: 1.5px solid hsla(246, 25%, 77%, 0.281);
+  outline: none;
+  border-radius: 5px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.trialform input[type="submit"] {
+    color: white;
+    background-color:hsl(154, 59%, 51%);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.trialform input:focus {
+    
+    border: 1.5px solid hsla(248, 32%, 49%, 0.609);
+  }
+.terms{
+    font-weight: 500;
+    color: hsla(246, 25%, 77%, 0.664);
+    font-size: .7rem;
+    text-align: center;
+    margin: 0;
+}
+.terms a{
+    color: hsl(0, 100%, 74%) ;
+    text-decoration: none;
+    font-weight: 700;
+}
+.input-error {
+    border: 1px solid hsl(0, 100%, 74%) !important;
+    background-image: url(./images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: right 5% center;
+  }
+  .err-msg {
+    display: none;
+    color: hsl(0, 100%, 74%);
+    font-size: .7rem;
+    font-style: italic;
+    margin-left: auto;
+    font-weight: 500;
+    margin-top: -15px;
+  }
+  
+  .err-msg-show {
+    display: block;
+  }
