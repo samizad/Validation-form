@@ -103,15 +103,79 @@ body{
     background-position: right 5% center;
   }
   .err-msg {
-    display: none;
     color: hsl(0, 100%, 74%);
     font-size: .7rem;
     font-style: italic;
     margin-left: auto;
     font-weight: 500;
     margin-top: -15px;
+  
+  }
+  .terms a :hover, 
+  .terms a :active{
+    text-decoration: underline;
+  }
+  .trial-form input[type="submit"]:active,
+  .trial-form input[type="submit"]:hover {
+    background-color: hsl(154, 67%, 68%);
+    box-shadow: 0 4px  hsl(154, 62%, 49%);
+    border: 1px solid hsl(154, 63%, 67%);
+  }
+  @media only screen and (max-width: 820px) {
+    .heading h1 {
+      font-size: 2rem;
+    }
+  
+    .heading {margin-right: 15px;}
   }
   
-  .err-msg-show {
-    display: block;
+  @media only screen and (max-width: 700px) {
+    body {
+      text-align: center;
+    }
+    container {
+      flex-direction: column;
+      justify-content: center;
+    }
   }
+  
+  @media only screen and (max-width: 450px) {
+    .trial {
+      padding: 25px 70px;
+    }
+    .trial-form {
+      padding: 30px 25px;
+    }
+    .trial-form input {
+      padding: 15px;
+    }
+    container {
+      margin: 10px
+    }
+  }
+  
+  @media only screen and (max-width: 375px) {
+    body {
+      background-image: url(./images/bg-intro-mobile.png);
+    }
+  }
+  
+  @media only screen and (max-width: 350px) {
+    
+    .heading h1 {
+      font-size: 1.7rem;
+    }
+    .trial {
+      padding: 20px 50px;
+    }
+    .trial-form {
+      padding: 20px;
+    }
+  }
+  
+  .hide {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+  }
+  
